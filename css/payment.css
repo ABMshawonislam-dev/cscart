@@ -1,0 +1,95 @@
+.csint-hero{
+    text-align: center;
+}
+
+.csint-title{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 73px;
+    font-weight: 800;
+    margin-bottom: 65px;
+    color: #1a1414;
+    margin-top: 77px;
+}
+
+.csint-img{
+    width: 755px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.csint-img .csint-item{
+    width: 245px;
+}
+
+.csint-img .csint-item img{
+    width: 100%;
+    display: block;
+}
+
+.csint-divider {
+    border-top: 2px solid #2e2e2e;
+    margin: 19px 0;
+}
+
+.csint-container{
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.csint-container .csint-heading{
+    width: 536px;
+}
+
+.csint-heading h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 49.5px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+
+.csint-bottom-img{
+    width: 855px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.csint-bottom-img .csint-item{
+    width: 278px;
+}
+
+.csint-bottom-img .csint-item img{
+    width: 100%;
+    display: block;
+}
+
+.csint-sidebyside-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px 83px;
+}
+
+.csint-sidebyside-item{
+    width: 46%;
+}
+
+.csint-sidebyside-item h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.csint-sidebyside-item p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
