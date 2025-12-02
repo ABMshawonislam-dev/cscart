@@ -16,24 +16,26 @@ body {
 
 /* Hero Section */
 .csint-hero {
-  width: 60%;
+  width: 70%;
   margin-top: 170px;
   margin-inline: auto;
   position: relative;
   background-color: #e8e8e8;
 }
-.csint-hero-parent {
-  padding-bottom: 40px;
-}
-.csint-hero-parent::after {
+
+.csint-hero::after {
   content: "";
   position: absolute;
-  bottom: -123px;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 40px;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.055));
   pointer-events: none;
+}
+
+.csint-hero-parent {
+  padding-bottom: 40px;
 }
 
 .csint-hero img {
@@ -46,10 +48,10 @@ body {
 .csint-hero-overlay {
   position: absolute;
   top: -110px;
-  left: -95px;
+  left: -85px;
   width: 100%;
   height: 100%;
-  padding-left: 8%;
+  padding-left: 6%;
 }
 
 .csint-hero-title {
@@ -384,51 +386,15 @@ body {
 
 /* RESPONSIVE STYLES */
 
-@media (max-width: 1024px) {
-  .csint-hero-overlay {
-    padding-left: 6%;
-  }
-
-  .csint-hero-title {
-    font-size: 65px;
-  }
-
-  .csint-container {
-    max-width: 900px;
-    padding: 50px 30px 70px;
-  }
-
-  .csint-title {
-    font-size: 46px;
-  }
-
-  .csint-section-title {
-    font-size: 32px;
-  }
-
-  .csint-content-block h3 {
-    font-size: 17px;
-  }
-
-  .csint-content-block p {
-    font-size: 14px;
-  }
-
-  .csint-image-grid {
-    gap: 25px;
-  }
-
-  .csint-artikelen-title {
-    font-size: 28px;
-  }
-
-  .csint-artikelen-grid {
-    gap: 35px 60px;
-  }
-}
-
 @media (max-width: 768px) {
+  .csint-hero {
+    width: 90%;
+    margin-top: 80px;
+  }
+
   .csint-hero-overlay {
+    top: -60px;
+    left: -40px;
     padding-left: 5%;
   }
 
@@ -436,12 +402,16 @@ body {
     font-size: 50px;
   }
 
+  .csint-hero-title span {
+    font-size: 40px !important;
+  }
+
   .csint-container {
     padding: 40px 20px 60px;
   }
 
-  .csint-title {
-    font-size: 36px;
+  .csint-section-title {
+    font-size: 28px;
     margin-bottom: 25px;
   }
 
@@ -453,26 +423,6 @@ body {
     margin: 45px 0;
   }
 
-  .csint-section-title {
-    font-size: 28px;
-    margin-bottom: 25px;
-  }
-
-  .csint-content-block {
-    margin-bottom: 30px;
-  }
-
-  .csint-content-block h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .csint-content-block p {
-    font-size: 14px;
-    line-height: 1.7;
-    text-align: left;
-  }
-
   .csint-verzending-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -480,11 +430,16 @@ body {
 
   .csint-verzending-item {
     padding-left: 20px;
+    border-left-width: 10px;
     min-height: 60px;
   }
 
   .csint-verzending-item p {
     font-size: 14px;
+  }
+
+  .csint-retour-white-section {
+    padding: 40px 0;
   }
 
   .csint-retour-white-grid {
@@ -494,29 +449,90 @@ body {
 
   .csint-retour-white-col p {
     font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .csint-retour-white-col ul {
+    margin-bottom: 20px;
   }
 
   .csint-retour-white-list li {
     font-size: 13px;
   }
 
+  .csint-retour-section {
+    padding: 40px 0;
+    margin: 0;
+  }
+
   .csint-retour-container {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 0 20px;
+  }
+
+  .csint-retour-title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  .csint-retour-title::before {
+    width: 80px;
+    height: 3px;
+    top: -8px;
+  }
+
+  .csint-retour-intro,
+  .csint-retour-intro-2 {
+    font-size: 14px;
+  }
+
+  .csint-retour-left p {
+    font-size: 14px;
+    margin: 30px 0 25px 0;
+  }
+
+  .csint-retour-icon-item {
+    margin-bottom: 25px;
+  }
+
+  .csint-retour-icon img {
+    width: 40px;
+  }
+
+  .csint-retour-text p {
+    font-size: 14px !important;
   }
 
   .csint-retour-right {
+    align-items: center;
     gap: 20px;
+  }
+
+  .csint-retour-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .csint-artikelen-section {
+    padding: 40px 0;
   }
 
   .csint-artikelen-title {
     font-size: 24px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .csint-artikelen-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
+  }
+
+  .csint-artikelen-bar {
+    min-width: 8px;
+    width: 8px;
+    min-height: 60px;
   }
 
   .csint-artikelen-item p {
@@ -531,7 +547,14 @@ body {
 }
 
 @media (max-width: 480px) {
+  .csint-hero {
+    width: 95%;
+    margin-top: 60px;
+  }
+
   .csint-hero-overlay {
+    top: -40px;
+    left: -14px;
     padding-left: 4%;
   }
 
@@ -539,14 +562,17 @@ body {
     font-size: 36px;
   }
 
+  .csint-hero-title span {
+    font-size: 28px !important;
+  }
+
   .csint-container {
     padding: 30px 15px 50px;
   }
 
-  .csint-title {
-    font-size: 28px;
+  .csint-section-title {
+    font-size: 22px;
     margin-bottom: 20px;
-    letter-spacing: 0.5px;
   }
 
   .csint-divider {
@@ -557,27 +583,84 @@ body {
     margin: 35px 0;
   }
 
-  .csint-section {
-    margin-bottom: 30px;
+  .csint-verzending-item {
+    padding-left: 15px;
+    border-left-width: 8px;
   }
 
-  .csint-section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
+  .csint-verzending-item p {
+    font-size: 13px;
   }
 
-  .csint-content-block {
+  .csint-retour-white-section {
+    padding: 30px 0;
+  }
+
+  .csint-retour-white-col p {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .csint-retour-white-list li {
+    font-size: 12px;
+  }
+
+  .csint-retour-section {
+    padding: 30px 0;
+  }
+
+  .csint-retour-container {
+    padding: 0 15px;
+  }
+
+  .csint-retour-title {
+    font-size: 26px;
+  }
+
+  .csint-retour-title::before {
+    width: 60px;
+    height: 2px;
+  }
+
+  .csint-retour-intro,
+  .csint-retour-intro-2 {
+    font-size: 13px;
+  }
+
+  .csint-retour-left p {
+    font-size: 13px;
+    margin: 25px 0 20px 0;
+  }
+
+  .csint-retour-icon img {
+    width: 35px;
+  }
+
+  .csint-retour-text p {
+    font-size: 13px !important;
+  }
+
+  .csint-retour-image {
+    max-width: 100%;
+  }
+
+  .csint-artikelen-section {
+    padding: 30px 0;
+  }
+
+  .csint-artikelen-title {
+    font-size: 20px;
     margin-bottom: 25px;
   }
 
-  .csint-content-block h3 {
-    font-size: 15px;
-    margin-bottom: 8px;
+  .csint-artikelen-bar {
+    min-width: 6px;
+    width: 6px;
+    min-height: 50px;
   }
 
-  .csint-content-block p {
+  .csint-artikelen-item p {
     font-size: 13px;
-    line-height: 1.6;
   }
 
   .csint-image-grid {
