@@ -151,44 +151,149 @@ body {
   margin: 150px auto;
 }
 
-@media (max-width: 768px) {
+/* --------------------------------------- */
+/*   TABLET RESPONSIVE (max-width: 991px)  */
+/* --------------------------------------- */
+@media (max-width: 991px) {
+  /* .csint-hero-trio {
+    max-width: 90%;
+    margin: 40px auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  } */
+
+  .csint-title {
+    font-size: 48px;
+    letter-spacing: 30px;
+  }
+
+  .csint-subtitle-text {
+    font-size: 28px;
+    letter-spacing: 10px;
+  }
+
+  .csint-cup-section,
+  .csinit-inkoop-section,
+  .csint-waarm-section,
+  .csint-besparing-section {
+    width: 48%;
+    text-align: justify;
+  }
+
+  .csint-cup-section .csint-cup-section-flot,
+  .csinit-inkoop-section .inkoop-flot,
+  .csint-waarm-section .waarm-section-flot {
+    display: none; /* hide floating images */
+  }
+
+  .csint-cup-section .csint-cup-section-absulate,
+  .csinit-inkoop-section .inkoop-absulate {
+    display: block;
+    opacity: 1;
+    text-align: justify;
+    margin-top: 20px;
+  }
+
+  .csint-waarm-section .title {
+    font-size: 22px;
+  }
+
+  .csint-waarm-section .article {
+    margin-top: 60px;
+  }
   .csint-besparing-section .csint-arc {
-    width: 320px;
-    height: 160px;
+    margin: 0 auto;
+    margin-left: 30px;
   }
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .csint-hero-box {
-    height: 300px;
+/* --------------------------------------- */
+/*   MOBILE RESPONSIVE (max-width: 576px)  */
+/* --------------------------------------- */
+@media (max-width: 576px) {
+  body {
+    padding: 0 15px;
   }
-}
 
-@media (max-width: 768px) {
-  .csint-hero-trio {
+  /* Hero Trio becomes stacked */
+  /* .csint-hero-trio {
     grid-template-columns: 1fr;
-  }
-  .csint-hero-box {
-    height: 220px;
-  }
+    gap: 12px;
+  } */
+
   .csint-title {
-    font-size: 44px;
-    letter-spacing: 6px;
+    font-size: 32px;
+    letter-spacing: 12px;
   }
+
   .csint-subtitle-text {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 1.4;
+  }
+
+  .csint-cup-section,
+  .csinit-inkoop-section,
+  .csint-waarm-section,
+  .csint-besparing-section {
+    width: 100%;
+    margin: 40px auto;
+    line-height: 24px;
+  }
+
+  .csinit-inkoop-section .title {
+    font-size: 30px;
+    letter-spacing: 20px;
+  }
+
+  .csint-waarm-section .title {
+    font-size: 20px;
+  }
+
+  .csint-besparing-section .image img {
+    width: 70%;
+  }
+  .csint-besparing-section .csint-arc {
+    margin: 0 auto;
+  }
+
+  .vartical-line {
+    height: 180px;
+    margin: 80px auto;
   }
 }
 
-@media (max-width: 480px) {
-  .csint-title {
-    font-size: 36px;
-    letter-spacing: 5px;
+/* Tablet */
+@media (max-width: 991px) {
+  .csint-hero-trio {
+    max-width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 16px;
   }
-  .csint-subtitle-text {
-    font-size: 16px;
-    letter-spacing: 1px;
+
+  .csint-hero-trio img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .csint-hero-trio {
+    max-width: 100%;
+    margin: 20px auto;
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 12px;
+  }
+
+  .csint-hero-trio img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
   }
 }
