@@ -37,17 +37,16 @@ body {
 .csint-img {
   width: 100%;
   max-width: 755px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .csint-img .csint-item {
-  width: 245px;
-  height: 245px;
+  width: 100%;
+  aspect-ratio: 1;
   position: relative;
   flex-shrink: 0;
 }
@@ -198,11 +197,6 @@ body {
     gap: 8px;
   }
 
-  .csint-img .csint-item {
-    width: 168px;
-    height: 168px;
-  }
-
   .csint-img .csint-item .csint-center p {
     font-size: 22px;
   }
@@ -236,11 +230,6 @@ body {
   .csint-img {
     max-width: 360px;
     gap: 6px;
-  }
-
-  .csint-img .csint-item {
-    width: 116px;
-    height: 116px;
   }
 
   .csint-img .csint-item .csint-center p {
@@ -294,14 +283,9 @@ body {
     padding: 0 10px;
   }
 
-  .csint-img .csint-item {
-    width: calc(33.333% - 5px);
-    height: auto;
-    aspect-ratio: 1;
-  }
-
   .csint-img .csint-item .csint-center p {
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 1.2;
   }
 
   .csint-container {
