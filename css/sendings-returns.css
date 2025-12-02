@@ -16,23 +16,37 @@ body {
 
 /* Hero Section */
 .csint-hero {
-  width: 80%;
+  width: 60%;
   margin-top: 170px;
   margin-inline: auto;
   position: relative;
   background-color: #e8e8e8;
+}
+.csint-hero-parent {
+  padding-bottom: 40px;
+}
+.csint-hero-parent::after {
+  content: "";
+  position: absolute;
+  bottom: -123px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.055));
+  pointer-events: none;
 }
 
 .csint-hero img {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
 }
 
 .csint-hero-overlay {
   position: absolute;
-  top: -40px;
-  left: -124px;
+  top: -110px;
+  left: -95px;
   width: 100%;
   height: 100%;
   padding-left: 8%;
@@ -42,14 +56,14 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 80px;
   font-weight: 300;
-  line-height: 0.45;
+  line-height: 0.85;
   color: #000000;
   margin: 0;
   letter-spacing: -1px;
 }
 
 .csint-hero-title span {
-  font-size: 50px !important;
+  font-size: 60px !important;
   font-weight: 700;
 }
 
@@ -144,6 +158,49 @@ body {
   margin: 0;
   color: #555;
   text-align: left;
+}
+
+/* Retour White Section */
+.csint-retour-white-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.csint-retour-white-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.csint-retour-white-col p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 60px 0;
+  color: #333;
+  text-align: justify;
+}
+.csint-retour-white-col ul {
+  margin: 0 0 60px 0;
+}
+
+.csint-retour-white-col p strong {
+  font-weight: 600;
+}
+
+.csint-retour-white-list {
+  margin: 15px 0 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.csint-retour-white-list li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 8px;
 }
 
 /* Retour Container */
@@ -428,6 +485,19 @@ body {
 
   .csint-verzending-item p {
     font-size: 14px;
+  }
+
+  .csint-retour-white-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .csint-retour-white-col p {
+    font-size: 13px;
+  }
+
+  .csint-retour-white-list li {
+    font-size: 13px;
   }
 
   .csint-retour-container {
