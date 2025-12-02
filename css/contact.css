@@ -1,178 +1,360 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #111;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+  overflow-x: hidden;
 }
 
 .csint-contact-page-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* HERO SECTION */
 .csint-contact-hero-section {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
 }
 
 .hero-img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.6;
 }
 
 .csint-contact-hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
 
 .csint-contact-hero-text h1 {
-    font-size: 69.7px;
-    letter-spacing: 4px;
-    margin: 0;
+  font-size: 69.7px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin: 0;
+  font-weight: 300;
 }
 
 .csint-contact-hero-text p {
-    font-size: 16.3px;
-    margin-top: 10px;
-    letter-spacing: 2px;
+  font-size: 16.3px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 /* CONTACT NAV */
 .csint-contact-nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 30px 0;
-    font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 50px 0;
+  font-size: 14px;
+  flex-wrap: wrap;
 }
 
 .csint-nav-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15.7px;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 30px;
+  position: relative;
 }
 
-.csint-nav-item img{
-    width: 35px;
-    margin-right: 35px;
+.csint-nav-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 25px;
+  background-color: #000;
 }
 
-.csint-nav-item p{
-    position: relative;
+.csint-nav-item img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
-.csint-nav-item p:after {
-    position: absolute;
-    top: -3px;
-    left: -17px;
-    width: 2px;
-    height: 23px;
-    content: " ";
-    background-color: #000000;
+.csint-nav-item p {
+  margin: 0;
 }
 
 /* TITLE */
 .csint-contact-section-title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 500;
-    margin-top: 40px;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .divider {
-    width: 100%;
-    height: 2px;
-    background: #000;
-    margin: 25px 0 40px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin: 0 0 40px 0;
 }
 
 /* INFO BLOCKS */
 .csint-info-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
 }
 
 .csint-info-box h4 {
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 .csint-info-box p {
-    font-size: 12px;
-    line-height: 20px;
-    text-align: justify;
-    width: 225px;
-    line-height: 1.8;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* BOTTOM SECTION */
 .csint-contact-bottom-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 80px;
-    gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+  gap: 80px;
+  margin-bottom: 80px;
+  border-radius: 10px;
 }
 
 /* FORM */
-.csint-contact-form-area h3,
+.csint-contact-form-area h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
 .csint-contact-details h3 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
-    display: block;
-    font-size: 10px;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 11px;
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 form input,
 form textarea {
-    width: 90%;
-    background: #eee;
-    border: none;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 3px;
-    font-family: inherit;
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 button {
-    width: 90%;
-    padding: 12px;
-    background: #000;
-    color: white;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: white;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #333;
 }
 
 /* CONTACT DETAILS */
+.csint-contact-details {
+  display: flex;
+  flex-direction: column;
+}
 .csint-contact-details p {
-    font-size: 13px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.csint-contact-details p span {
+  margin-top: 5px;
+  width: 30px;
+}
+.csint-contact-details p span img {
+  width: 30px;
+}
+
+.csint-contact-details .web-url {
+  font-weight: bold;
+}
+.csint-contact-details .phone {
+  font-weight: bold;
+}
+.csint-contact-details .address {
+  font-weight: 600;
+}
+
+.csint-contact-details p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.8;
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-    .csint-info-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+@media (max-width: 1024px) {
+  .csint-contact-page-container {
+    padding: 0 30px;
+  }
 
-    .csint-contact-bottom-section {
-        grid-template-columns: 1fr;
-    }
+  .csint-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .csint-contact-nav {
+    gap: 10px;
+    padding: 40px 0;
+  }
+
+  .csint-nav-item {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .csint-contact-hero-text h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .csint-contact-hero-text p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .csint-contact-nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .csint-nav-item {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .csint-nav-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .csint-contact-section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .csint-info-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .csint-info-box p {
+    text-align: left;
+  }
+
+  .csint-contact-bottom-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .csint-contact-form-area h3,
+  .csint-contact-details h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .csint-contact-page-container {
+    padding: 0 15px;
+  }
+
+  .csint-contact-hero-text h1 {
+    font-size: 30px;
+  }
+
+  .csint-contact-hero-text p {
+    font-size: 10px;
+  }
+
+  .csint-nav-item {
+    font-size: 11px;
+  }
+
+  .csint-nav-item img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .csint-contact-section-title {
+    font-size: 20px;
+  }
+
+  .csint-info-box h4 {
+    font-size: 12px;
+  }
+
+  .csint-info-box p {
+    font-size: 11px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 12px;
+  }
 }
