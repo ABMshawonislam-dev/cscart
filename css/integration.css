@@ -1,80 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.csint-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.csint-hero {
+  width: 100%;
+}
 
 .csint-hero img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .csint-container {
-    max-width: 847px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    padding-top: 57px;
+  max-width: 847px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  padding-top: 57px;
 }
 
 .csint-title {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 54px;
-    font-weight: 800;
-    margin-bottom: 8px;
-    color: #1a1414;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #1a1414;
+  margin-top: 0;
 }
 
 .csint-subtitle {
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    font-size: 18.3px;
-    color: #bbb099;
-    margin-bottom: 60px;
-    margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 18.3px;
+  color: #bbb099;
+  margin-bottom: 60px;
+  margin-top: 0;
+  padding: 0 10px;
 }
 
 .csint-item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    gap: 80px;
-    padding: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 20px 0;
 }
 
 .csint-logo {
-    /* width: 70px; */
-    height: auto;
+  flex-shrink: 0;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.csint-content {
+  flex: 1;
 }
 
 .csint-content h3 {
-    font-family: "League Spartan", sans-serif;
-    margin: 0 0 10px;
-    font-size: 25.2px;
-    font-weight: 900;
-    color: #1a1414;
+  font-family: "League Spartan", sans-serif;
+  margin: 0 0 10px;
+  font-size: 25.2px;
+  font-weight: 900;
+  color: #1a1414;
 }
 
 .csint-content p {
-    font-family: "League Spartan", sans-serif;
-    margin: 0;
-    font-size: 16px;
-    line-height: 1;
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .csint-divider {
-    border-top: 2px solid #2e2e2e;
-    margin: 25px 0;
+  border-top: 2px solid #2e2e2e;
+  margin: 25px 0;
 }
 
-/* Mobile responsive */
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+  .csint-container {
+    max-width: 720px;
+    padding: 35px 30px;
+    padding-top: 50px;
+  }
+
+  .csint-title {
+    font-size: 48px;
+  }
+
+  .csint-subtitle {
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+
+  .csint-item {
+    gap: 60px;
+  }
+
+  .csint-logo {
+    max-width: 120px;
+  }
+
+  .csint-content h3 {
+    font-size: 23px;
+  }
+
+  .csint-content p {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 768px) {
-    .csint-item {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
+  .csint-container {
+    padding: 30px 20px;
+    padding-top: 40px;
+  }
 
-    .csint-content h3 {
-        text-align: center;
-    }
+  .csint-title {
+    font-size: 38px;
+  }
 
-    .csint-content p {
-        text-align: center;
-    }
+  .csint-subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .csint-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 15px 0;
+  }
+
+  .csint-logo {
+    max-width: 100px;
+  }
+
+  .csint-content h3 {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .csint-content p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .csint-divider {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .csint-container {
+    padding: 25px 15px;
+    padding-top: 30px;
+  }
+
+  .csint-title {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+
+  .csint-subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+  }
+
+  .csint-item {
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .csint-logo {
+    max-width: 80px;
+  }
+
+  .csint-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .csint-content p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .csint-divider {
+    margin: 15px 0;
+  }
 }
