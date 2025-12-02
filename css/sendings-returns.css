@@ -263,14 +263,13 @@ body {
 /* Artikelen Section */
 .csint-artikelen-section {
   padding: 60px 0;
-  background-color: #f5f5f5;
 }
 
 .csint-artikelen-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
+  font-size: 51px;
+  font-weight: 400;
+  text-align: left;
   margin: 0 0 50px 0;
   color: #1a1414;
   letter-spacing: 0.5px;
@@ -281,7 +280,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 80px;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 .csint-artikelen-item {
@@ -291,9 +289,9 @@ body {
 }
 
 .csint-artikelen-bar {
-  min-width: 6px;
-  width: 6px;
-  height: 100%;
+  min-width: 12px;
+  width: 12px;
+  min-height: 80px;
   background-color: #000000;
   align-self: stretch;
 }
