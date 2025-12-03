@@ -430,8 +430,8 @@ body {
   }
 
   .csint-verzending-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
   }
 
   .csint-verzending-item {
@@ -531,8 +531,8 @@ body {
   }
 
   .csint-artikelen-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
   }
 
   .csint-artikelen-bar {
