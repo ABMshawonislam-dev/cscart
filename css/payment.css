@@ -19,9 +19,11 @@ body {
 }
 
 .csint-hero img {
-  width: 100%;
+  width: 70%;
   height: auto;
   display: block;
+  margin-top: 60px;
+  margin-inline: auto;
 }
 
 .csint-title {
@@ -271,8 +273,13 @@ body {
 }
 
 @media (max-width: 480px) {
+  .csint-hero img {
+    margin-top: 10px;
+    width: 95%;
+  }
+
   .csint-title {
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 40px;
     margin-bottom: 30px;
   }
