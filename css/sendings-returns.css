@@ -37,6 +37,12 @@ body {
 .csint-hero-parent {
   padding-bottom: 40px;
 }
+.csint-shadow {
+  width: 100%;
+  height: 20px;
+  box-shadow: 0 -10px 20px rgba(58, 58, 58, 0.032);
+  margin-top: 70px;
+}
 
 .csint-hero img {
   width: 100%;
