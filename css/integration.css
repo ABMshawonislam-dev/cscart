@@ -27,8 +27,8 @@ body {
 .csint-container {
   max-width: 847px;
   margin: 0 auto;
-  padding: 40px 20px;
-  padding-top: 57px;
+  padding: 10px 20px;
+  padding-top: 20px;
 }
 
 .csint-title {
@@ -38,7 +38,7 @@ body {
   font-weight: 800;
   margin-bottom: 8px;
   color: #1a1414;
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .csint-subtitle {
@@ -49,6 +49,13 @@ body {
   margin-bottom: 60px;
   margin-top: 0;
   padding: 0 10px;
+}
+
+.csint-shadow {
+  width: 100%;
+  height: 20px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .csint-item {
@@ -126,6 +133,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .csint-hero img {
+    margin-top: 0px;
+  }
+
   .csint-container {
     padding: 30px 20px;
     padding-top: 40px;
@@ -169,6 +180,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .csint-hero img {
+    margin-top: 0px;
+  }
+
   .csint-container {
     padding: 25px 15px;
     padding-top: 30px;
