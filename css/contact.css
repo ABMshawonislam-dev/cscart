@@ -23,7 +23,7 @@ body {
   overflow: hidden;
 }
 
-.hero-img {
+.csint-hero-img {
   width: 100%;
   height: auto;
   display: block;
@@ -106,7 +106,7 @@ body {
   margin-bottom: 20px;
 }
 
-.divider {
+.csint-divider {
   width: 100%;
   height: 2px;
   background: #000;
@@ -229,13 +229,13 @@ button:hover {
   width: 30px;
 }
 
-.csint-contact-details .web-url {
+.csint-contact-details .csint-web-url {
   font-weight: bold;
 }
-.csint-contact-details .phone {
+.csint-contact-details .csint-phone {
   font-weight: bold;
 }
-.csint-contact-details .address {
+.csint-contact-details .csint-address {
   font-weight: 600;
 }
 
