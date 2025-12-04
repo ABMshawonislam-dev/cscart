@@ -73,10 +73,19 @@ body {
 }
 .csint-cup-section .csint-cup-section-absulate {
   opacity: 0 !important;
+  height: 300px !important;
+  overflow: hidden !important;
+}
+.csint-cup-section .csint-cup-section-absulate img {
+  height: 300px !important;
 }
 .csint-cup-section .csint-cup-section-flot {
   position: absolute !important;
-  left: -100% !important;
+  left: -120% !important;
+  height: 400px !important;
+}
+.csint-cup-section .csint-cup-section-flot img {
+  height: 400px !important;
 }
 .csint-cup-section .csint-cup-section-flot img {
   width: 110% !important;
@@ -89,7 +98,7 @@ body {
   position: relative !important;
 }
 .csinit-inkoop-section .title {
-  letter-spacing: 40px !important;
+  letter-spacing: 38px !important;
   text-transform: uppercase !important;
   font-size: 39px !important;
 }
@@ -104,9 +113,14 @@ body {
 }
 .csinit-inkoop-section .inkoop-flot {
   position: absolute !important;
-  right: -400px !important;
+  right: -500px !important;
   bottom: 330px !important;
+  height: 500px !important;
 }
+.csinit-inkoop-section .inkoop-flot img {
+  height: 500px;
+}
+
 .csinit-inkoop-section .inkoop-absulate {
   opacity: 0 !important;
   display: none !important;
