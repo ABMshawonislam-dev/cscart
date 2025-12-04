@@ -13,13 +13,16 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="css/contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="csint-contact-hero-section">
       <img src="images/contactbanner.png" class="csint-hero-img" alt="" />
       <div class="csint-contact-hero-text">
-        <h1>HALLO...</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+          HALLO...
+        </h1>
         <p>WAAR KUNNEN WE U MEE HELPEN</p>
       </div>
     </div>
@@ -28,21 +31,41 @@
 
       <!-- TOP CONTACT NAV -->
       <div class="csint-contact-nav">
-        <div class="csint-nav-item">
-          <img src="images/contacticon1.png" alt="" />
-          <p>KLANTENSERVICE</p>
+        <div data-aos="fade-right" class="csint-nav-item">
+          <img
+            data-aos="fade-right"
+            data-aos="zoom-out-right"
+            data-aos-duration="1500"
+            src="images/contacticon1.png"
+            alt="" />
+          <p data-aos="fade-right" data-aos-duration="1300">KLANTENSERVICE</p>
         </div>
         <div class="csint-nav-item">
-          <img src="images/contacticon2.png" alt="" />
-          <p>VIA VERKOPER</p>
+          <img
+            data-aos="fade-right"
+            data-aos="zoom-out-right"
+            data-aos-duration="1500"
+            src="images/contacticon2.png"
+            alt="" />
+          <p data-aos="fade-right" data-aos-duration="1300">VIA VERKOPER</p>
         </div>
         <div class="csint-nav-item">
-          <img src="images/contacticon3.png" alt="" />
-          <p>BELVERZOEK</p>
+          <img
+            data-aos="fade-right"
+            data-aos="zoom-out-right"
+            data-aos-duration="1500"
+            src="images/contacticon3.png"
+            alt="" />
+          <p data-aos="fade-right" data-aos-duration="1300">BELVERZOEK</p>
         </div>
         <div class="csint-nav-item">
-          <img src="images/contacticon4.png" alt="" />
-          <p>CONTACTFORMULIER</p>
+          <img
+            data-aos="fade-right"
+            data-aos="zoom-out-right"
+            data-aos-duration="1500"
+            src="images/contacticon4.png"
+            alt="" />
+          <p data-aos="fade-right" data-aos-duration="1300">CONTACTFORMULIER</p>
         </div>
       </div>
 
@@ -130,5 +153,9 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
