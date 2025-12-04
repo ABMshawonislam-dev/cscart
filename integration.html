@@ -10,13 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="css/integration.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="csint-page">
       <div class="csint-hero">
-        <img src="images/banner.png" alt="hero image" />
-        <h2 class="csint-title">INTEGRATIES</h2>
-        <p class="csint-subtitle">Koppel uw webshop gratis aan ons platform en start met verkopen</p>
+        <img data-aos="fade-up" data-aos-duration="1300" src="images/banner.png" alt="hero image" />
+        <h2 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300" class="csint-title">
+          INTEGRATIES
+        </h2>
+        <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600" class="csint-subtitle">
+          Koppel uw webshop gratis aan ons platform en start met verkopen
+        </p>
         <div class="csint-shadow"></div>
       </div>
 
@@ -148,5 +153,9 @@
         <div class="csint-divider"></div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
