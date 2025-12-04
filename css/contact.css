@@ -51,6 +51,11 @@ body {
   margin-top: 10px !important;
   letter-spacing: 2px !important;
   font-weight: 300 !important;
+  min-height: 20px !important;
+}
+
+.csint-typewriter {
+  display: inline-block !important;
 }
 
 /* CONTACT NAV */

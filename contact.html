@@ -23,7 +23,7 @@
         <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
           HALLO...
         </h1>
-        <p>WAAR KUNNEN WE U MEE HELPEN</p>
+        <p class="csint-typewriter"></p>
       </div>
     </div>
     <div class="csint-contact-page-container">
@@ -156,6 +156,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // Typewriter effect
+      const text = "WAAR KUNNEN WE U MEE HELPEN";
+      const typewriterElement = document.querySelector(".csint-typewriter");
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          typewriterElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 80); // Adjust speed here (milliseconds per character)
+        }
+      }
+
+      // Start typewriter effect on page load
+      window.addEventListener("load", typeWriter);
     </script>
   </body>
 </html>
