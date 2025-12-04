@@ -34,6 +34,22 @@ body {
   margin: 0 !important;
 }
 
+.csint-title-typewriter span {
+  display: inline-block !important;
+  transform-origin: center !important;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
 /* Subtitle */
 .csint-subtitle {
   max-width: 1140px !important;

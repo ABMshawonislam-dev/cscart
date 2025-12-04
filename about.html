@@ -39,7 +39,7 @@
 
       <!-- Page Title -->
       <section class="csint-title-section">
-        <h1 class="csint-title">OVER ONS</h1>
+        <h1 class="csint-title csint-title-typewriter"></h1>
       </section>
 
       <!-- Subtitle / Intro line -->
@@ -155,6 +155,27 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // Typewriter effect with rotation for title
+      const titleText = "OVER ONS";
+      const titleElement = document.querySelector(".csint-title-typewriter");
+      let titleIndex = 0;
+
+      function typeWriterTitle() {
+        if (titleIndex < titleText.length) {
+          const span = document.createElement("span");
+          span.textContent = titleText.charAt(titleIndex);
+          span.style.display = "inline-block";
+          span.style.animation = "rotateIn 0.6s ease-in-out forwards";
+          titleElement.appendChild(span);
+          titleIndex++;
+          setTimeout(typeWriterTitle, 150);
+        }
+      }
+
+      // Start typewriter effect on page load
+      window.addEventListener("load", typeWriterTitle);
     </script>
   </body>
 </html>
