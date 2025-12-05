@@ -159,23 +159,23 @@ body {
 
 /* FORM */
 .csint-contact-form-area div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 90px;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding-bottom: 90px !important;
 }
 .csint-contact-form-area div img {
-  width: 50%;
+  width: 50% !important;
 }
 
 .csint-contact-details div {
-  width: 100%;
+  width: 100% !important;
   display: flex;
   justify-content: start;
   padding-bottom: 90px;
 }
 .csint-contact-details div img {
-  width: 60%;
+  width: 60% !important;
 }
 
 form {
