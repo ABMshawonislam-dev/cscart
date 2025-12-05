@@ -16,7 +16,7 @@ body {
 
 /* Hero Section */
 .csint-hero {
-  width: 70% !important;
+  width: 99% !important;
   margin-top: 170px !important;
   margin-inline: auto !important;
   position: relative !important;
@@ -54,7 +54,7 @@ body {
 .csint-hero-overlay {
   position: absolute !important;
   top: -110px !important;
-  left: -85px !important;
+  left: -118px !important;
   width: 100% !important;
   height: 100% !important;
   padding-left: 6% !important;
@@ -394,7 +394,7 @@ body {
 
 @media (max-width: 768px) {
   .csint-hero {
-    width: 90% !important;
+    width: 100% !important;
     margin-top: 80px !important;
   }
 
@@ -554,7 +554,7 @@ body {
 
 @media (max-width: 480px) {
   .csint-hero {
-    width: 95% !important;
+    width: 100% !important;
     margin-top: 60px !important;
   }
 
