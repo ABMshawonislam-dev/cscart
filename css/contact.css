@@ -19,8 +19,12 @@ body {
 .csint-contact-hero-section {
   position: relative !important;
   width: 100% !important;
-  background: #000 !important;
+  height: 630px;
   overflow: hidden !important;
+  background-image: url("../images/contactbanner.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .csint-hero-img {
@@ -40,22 +44,23 @@ body {
 }
 
 .csint-contact-hero-text h1 {
-  font-size: 69.7px !important;
+  font-size: 95px !important;
   letter-spacing: 4px !important;
   font-weight: 700 !important;
   margin: 0 !important;
 }
 
 .csint-contact-hero-text p {
-  font-size: 16.3px !important;
+  font-size: 24px !important;
   margin-top: 10px !important;
   letter-spacing: 2px !important;
   font-weight: 300 !important;
-  min-height: 20px !important;
+  min-height: 30px !important;
 }
 
 .csint-typewriter {
   display: inline-block !important;
+  font-size: 24px !important;
 }
 
 /* CONTACT NAV */
