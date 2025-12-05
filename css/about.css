@@ -14,11 +14,16 @@ body {
 
 /* Hero Trio */
 .csint-hero-trio {
-  max-width: 1140px !important;
+  max-width: 1400px !important;
   margin: 60px auto 30px !important;
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 24px !important;
+  align-items: center !important;
+  /* justify-items: center !important; */
+}
+.csint-hero-trio .csint-hero-box img {
+  width: 90%;
 }
 
 /* Title */
@@ -82,10 +87,10 @@ body {
 .csint-cup-section .csint-cup-section-flot {
   position: absolute !important;
   left: -120% !important;
-  height: 400px !important;
+  height: 350px !important;
 }
 .csint-cup-section .csint-cup-section-flot img {
-  height: 400px !important;
+  height: 350px !important;
 }
 .csint-cup-section .csint-cup-section-flot img {
   width: 110% !important;
@@ -113,12 +118,12 @@ body {
 }
 .csinit-inkoop-section .inkoop-flot {
   position: absolute !important;
-  right: -500px !important;
+  right: -300px !important;
   bottom: 330px !important;
-  height: 500px !important;
+  height: 300px !important;
 }
 .csinit-inkoop-section .inkoop-flot img {
-  height: 500px;
+  height: 300px;
 }
 
 .csinit-inkoop-section .inkoop-absulate {
