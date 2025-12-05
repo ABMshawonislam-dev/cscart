@@ -21,10 +21,10 @@ body {
   width: 100% !important;
   height: 630px;
   overflow: hidden !important;
-  background-image: url("../images/contactbanner.png");
+  background-image: url("../images/contactbanner.png") !important;
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
 }
 
 .csint-hero-img {
